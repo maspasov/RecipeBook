@@ -1,0 +1,4 @@
+
+Udemy - The Complete Guide to Angular 2 (Updated to final version)
+
+\02 Components, Templates & Databinding\23 Event Binding.mp4
