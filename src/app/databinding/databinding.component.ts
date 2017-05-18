@@ -14,4 +14,7 @@ export class DatabindingComponent {
     return true;
   }
 
+  onClicked(value: string) {
+    alert(value);
+  }
 }

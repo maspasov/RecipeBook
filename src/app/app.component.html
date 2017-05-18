@@ -1,6 +1,8 @@
-<h1>
+<h1>Root Component</h1>
+
+<h2>
   {{title}}
-</h1>
+</h2>
 
 <app-other></app-other>
 
@@ -9,3 +11,11 @@
 </app-another>
 
 <app-databinding></app-databinding>
+
+<hr>
+<app-lifecycle *ngIf="!delete" [bindable] = "1000">
+  <p>{{test}}</p>
+</app-lifecycle>
+
+<button (click)="delete = true">Click to Delete</button>
+<button (click)="test = 'Changed value'">Changed value</button>

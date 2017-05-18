@@ -8,6 +8,9 @@ import { OtherComponent } from './other/other.component';
 import { AnotherComponent } from './other/another.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertyBindingComponent } from './databinding/property-binding.component';
+import { EventBindingComponent } from './databinding/event-binding.component';
+import { TwoWayBindingComponent } from './databinding/two-way-binding.component';
+import { LifecycleComponent } from './lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,10 @@ import { PropertyBindingComponent } from './databinding/property-binding.compone
     AnotherComponent,
     DatabindingComponent,
     PropertyBindingComponent,
+    EventBindingComponent,
+    TwoWayBindingComponent,
+    LifecycleComponent,
+    LifecycleComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,4 +32,5 @@ import { PropertyBindingComponent } from './databinding/property-binding.compone
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }
