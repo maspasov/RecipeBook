@@ -16,8 +16,8 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
   private recipeIndex: number;
   private subscription: Subscription;
 
-  constructor(private sls: ShoppingListService, 
-              private router: Router, 
+  constructor(private sls: ShoppingListService,
+              private router: Router,
               private route: ActivatedRoute,
               private recipesService: RecipeService) { }
 
@@ -31,9 +31,8 @@ export class RecipeDetailComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe;
+    this.subscription.unsubscribe();
   }
-
 
   onEdit() {
     this.router.navigate(['./recipes', this.recipeIndex, 'edit']);
