@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { Routes, RouterModule } from '@angular/router';
-import { appRoutes } from './app.routes';
+import { Routes } from '@angular/router';
+import { routing } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
@@ -40,10 +40,13 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes),
+    routing,
     ReactiveFormsModule
   ],
-  providers: [RecipeService, ShoppingListService],
+  providers: [
+    RecipeService,
+    ShoppingListService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
